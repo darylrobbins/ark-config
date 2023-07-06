@@ -1,0 +1,303 @@
+; Ark Survival Evolved GameUserSettings.ini
+;
+; This file holds all the configuration settings for the standard game as well as potential settings of mods.
+; Use this as a template to create your own configuration.
+; The configuration in this file is the same as what the Lagoverse server is running.
+;
+; ---------------------------------------------------------------------------------------------------------------------
+; ServerSettings - General settings that affect the entire game
+; ---------------------------------------------------------------------------------------------------------------------
+[ServerSettings]
+DifficultyOffset=1.000000
+XPMultiplier=2.00000
+PerPlatformMaxStructuresMultiplier=2.000000
+MaxPlatformSaddleStructureLimit=360
+AllowThirdPersonPlayer=true
+ServerCrosshair=true
+AlwaysNotifyPlayerLeft=true
+DontAlwaysNotifyPlayerJoined=false
+ShowMapPlayerLocation=true
+TheMaxStructuresInRange=10500.000000
+OxygenSwimSpeedStatMultiplier=1.000000
+StructurePreventResourceRadiusMultiplier=1.000000
+RaidDinoCharacterFoodDrainMultiplier=1.000000
+PvEDinoDecayPeriodMultiplier=2.000000
+KickIdlePlayersPeriod=7200.000000
+AutoSavePeriodMinutes=30.000000
+ListenServerTetherDistanceMultiplier=1.000000
+
+; The amount of dino's that can be tamed on the server.
+MaxTamedDinos=9500.000000
+
+; Admin settings and the server password go here.
+AdminLogging=False
+ServerPassword={{ ENV['SERVER_PASSWORD'] }}
+ServerAdminPassword={{ ENV['ADMIN_PASSWORD'] }}
+
+; RCON Settings for external access to the server.
+RCONEnabled=true
+RCONPort=18817
+RCONServerGameLogBuffer=600.000000
+
+; If you run a PvE Server, this setting allows you to pick up people with flyers.
+AllowFlyerCarryPVE=true
+
+; Disease Settings
+PreventDiseases=false
+NonPermanentDiseases=true
+
+; This allows you to see floating damage from dinosaurs and players.
+ShowFloatingDamageText=true
+AllowHitMarkers=true
+
+; Set this to true if you want people to be able to permanently tame a Titanosaur.
+AllowRaidDinoFeeding=false
+
+; Stack multiplier
+ItemStackSizeMultiplier=5.0
+
+; ---------------------------------------------------------------------------------------------------------------------
+; Baby Settings
+; These affect everything related to the babies created during breeding.
+; ---------------------------------------------------------------------------------------------------------------------
+; Allow any tribe member to cuddle a baby
+AllowAnyoneBabyImprintCuddle=true
+
+; ---------------------------------------------------------------------------------------------------------------------
+; Taming and Dinosaur Settings
+; ---------------------------------------------------------------------------------------------------------------------
+; Speed increase for performing tame
+TamingSpeedMultiplier=30.000000
+
+; ---------------------------------------------------------------------------------------------------------------------
+; Harvesting and resource settings
+; ---------------------------------------------------------------------------------------------------------------------
+; Amount of resources gained with a single hit
+HarvestAmountMultiplier=10.000000
+
+; ---------------------------------------------------------------------------------------------------------------------
+; Download and Upload Settings
+; Setting these to true will block downloads/uploads on your server
+; ---------------------------------------------------------------------------------------------------------------------
+NoTributeDownloads=false
+PreventDownloadItems=false
+PreventDownloadDinos=false
+PreventDownloadSurvivors=false
+PreventUploadItems=false
+PreventUploadDinos=false
+PreventUploadSurvivors=false
+
+; ---------------------------------------------------------------------------------------------------------------------
+; PvE and Tribe Settings
+; ---------------------------------------------------------------------------------------------------------------------
+ServerPVE=True
+PreventOfflinePvP=true
+PreventTribeAlliances=false
+PVEStructureDecay=true
+PVPStructureDecay=true
+PVPStructureDecayDestructionMultiplier=10
+PVEStructureDecayDestructionMultiplier=10
+
+; ---------------------------------------------------------------------------------------------------------------------
+; Tribute settings affect how long something will remain available when uploaded to the Obelisk
+; ---------------------------------------------------------------------------------------------------------------------
+TributeItemExpirationSeconds=31449600
+TributeDinoExpirationSeconds=31449600
+TributeCharacterExpirationSeconds=31449600
+
+; ---------------------------------------------------------------------------------------------------------------------
+; Genesis Specific Settings
+; These settings affect various things inside the Genesis DLC only.
+; ---------------------------------------------------------------------------------------------------------------------
+; Allow people to mount flying dinasaurs
+bForceCanRideFlyers=true
+
+; ---------------------------------------------------------------------------------------------------------------------
+; Time
+; ---------------------------------------------------------------------------------------------------------------------
+DayCycleSpeedScale = 1.0
+NightTimeSpeedScale = 8.0
+DayTimeSpeedScale = 1.0
+
+; ---------------------------------------------------------------------------------------------------------------------
+; Cryo
+; ---------------------------------------------------------------------------------------------------------------------
+EnableCryoSicknessPVE=false
+
+; ---------------------------------------------------------------------------------------------------------------------
+; Structures
+; ---------------------------------------------------------------------------------------------------------------------
+AlwaysAllowStructurePickup=true
+
+; ---------------------------------------------------------------------------------------------------------------------
+; These settings are for the DinoFinder Mod.
+; This mod allows you to create 2 items to reveal/find specific dino's on the map.
+; ---------------------------------------------------------------------------------------------------------------------
+[DinoFinder]
+MinLevels=120
+MaxLevels=150
+SearchRadius=17500
+displayOutline=false
+IgnoreFish=true
+
+noDamage=false
+HideAllTamed=true
+
+; ---------------------------------------------------------------------------------------------------------------------
+; Welcome message for people who join the server.
+; Supports coloring as well as a duration.
+; ---------------------------------------------------------------------------------------------------------------------
+[MessageOfTheDay]
+Message=<RichColor Color="0.85, 0.55, 1, 1">Welcome to the Old Blood Eyes server.</>\n<RichColor Color="1, 0, 0, 1">Authorized Users Only!</>\nManaged lovingly by Sir Coffinator.
+Duration=15
+
+; ---------------------------------------------------------------------------------------------------------------------
+; Session Settings - The name of your Server
+; ---------------------------------------------------------------------------------------------------------------------
+[SessionSettings]
+SessionName=[US] Old Blood Eyes (OBE)
+
+; ---------------------------------------------------------------------------------------------------------------------
+; This determines the amount of slots your server will have.
+; ---------------------------------------------------------------------------------------------------------------------
+[/Script/Engine.GameSession]
+MaxPlayers=10
+
+; ---------------------------------------------------------------------------------------------------------------------
+; This section is generated by default when the game is installed.
+; You can probably omit this from server configuration files.
+; ---------------------------------------------------------------------------------------------------------------------
+[/Script/ShooterGame.ShooterGameUserSettings]
+MasterAudioVolume=1.000000
+MusicAudioVolume=1.000000
+SFXAudioVolume=1.000000
+VoiceAudioVolume=1.000000
+UIScaling=1.000000
+UIQuickbarScaling=0.650000
+CameraShakeScale=0.650000
+bFirstPersonRiding=False
+bThirdPersonPlayer=False
+bShowStatusNotificationMessages=True
+TrueSkyQuality=0.700000
+FOVMultiplier=1.000000
+GroundClutterDensity=1.000000
+bFilmGrain=False
+bMotionBlur=False
+bUseDistanceFieldAmbientOcclusion=False
+bUseSSAO=True
+bShowChatBox=True
+bCameraViewBob=True
+bInvertLookY=False
+bFloatingNames=True
+bChatBubbles=True
+bHideServerInfo=False
+bJoinNotifications=False
+bCraftablesShowAllItems=False
+bLocalInventoryItemsShowAllItems=False
+bLocalInventoryCraftingShowAllItems=True
+bRemoteInventoryItemsShowAllItems=False
+bRemoteInventoryCraftingShowAllItems=False
+bRemoteInventoryShowEngrams=True
+LookLeftRightSensitivity=1.000000
+LookUpDownSensitivity=1.000000
+GraphicsQuality=1
+ActiveLingeringWorldTiles=7
+ClientNetQuality=3
+LastServerSearchType=0
+LastServerSort=2
+LastPVESearchType=-1
+LastDLCTypeSearchType=-1
+LastServerSortAsc=True
+LastAutoFavorite=True
+LastServerSearchHideFull=False
+LastServerSearchProtected=False
+HideItemTextOverlay=True
+bQuickToggleItemNames=True
+bDistanceFieldShadowing=True
+LODScalar=1.000000
+bToggleToTalk=False
+HighQualityMaterials=True
+HighQualitySurfaces=True
+bTemperatureF=False
+bDisableTorporEffect=False
+bChatShowSteamName=False
+bChatShowTribeName=True
+EmoteKeyBind1=0
+EmoteKeyBind2=0
+bNoBloodEffects=False
+bLowQualityVFX=False
+bSpectatorManualFloatingNames=False
+bSuppressAdminIcon=False
+bUseSimpleDistanceMovement=False
+bDisableMeleeCameraSwingAnims=False
+bHighQualityAnisotropicFiltering=False
+bUseLowQualityLevelStreaming=True
+bPreventInventoryOpeningSounds=False
+bPreventItemCraftingSounds=False
+bPreventHitMarkers=False
+bPreventCrosshair=False
+bPreventColorizedItemNames=False
+bHighQualityLODs=False
+bExtraLevelStreamingDistance=False
+bEnableColorGrading=True
+DOFSettingInterpTime=0.000000
+bDisableBloom=False
+bDisableLightShafts=False
+LastJoinedSessionPerCategory=" "
+bDisableMenuTransitions=False
+bEnableInventoryItemTooltips=True
+bRemoteInventoryShowCraftables=False
+bNoTooltipDelay=False
+LocalItemSortType=0
+LocalCraftingSortType=0
+RemoteItemSortType=0
+RemoteCraftingSortType=0
+VersionMetaTag=1
+ShowExplorerNoteSubtitles=False
+DisableMenuMusic=False
+DisableDefaultCharacterItems=False
+bHideFloatingPlayerNames=False
+bHideGamepadItemSelectionModifier=False
+PlayActionWheelClickSound=True
+MaxAscensionLevel=0
+bHostSessionHasBeenOpened=False
+bForceTPVCameraOffset=False
+bDisableTPVCameraInterpolation=False
+Gamma1=2.200000
+Gamma2=3.000000
+bEnableHDROutput=False
+bUseVSync=False
+MacroCtrl0=
+MacroCtrl1=
+MacroCtrl2=
+MacroCtrl3=
+MacroCtrl4=
+MacroCtrl5=
+MacroCtrl6=
+MacroCtrl7=
+MacroCtrl8=
+MacroCtrl9=
+ResolutionSizeX=1280
+ResolutionSizeY=720
+LastUserConfirmedResolutionSizeX=1280
+LastUserConfirmedResolutionSizeY=720
+WindowPosX=-1
+WindowPosY=-1
+bUseDesktopResolutionForFullscreen=False
+FullscreenMode=2
+LastConfirmedFullscreenMode=2
+Version=5
+
+[ScalabilityGroups]
+sg.ResolutionQuality=100
+sg.ViewDistanceQuality=3
+sg.AntiAliasingQuality=3
+sg.ShadowQuality=3
+sg.PostProcessQuality=3
+sg.TextureQuality=3
+sg.EffectsQuality=3
+sg.TrueSkyQuality=3
+sg.GroundClutterQuality=3
+sg.IBLQuality=1
+sg.HeightFieldShadowQuality=3
+sg.GroundClutterRadius=10000

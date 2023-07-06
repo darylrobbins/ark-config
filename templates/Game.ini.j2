@@ -1,0 +1,423 @@
+; Special Settings for Ark Survival Evolved.
+; Use these to make minor tweaks to your game/server.
+; The settings in this file are the base for The Lagoverse Server
+[/Script/ShooterGame.ShooterGameMode]
+; If you want the game to run under "Single Player" Settings - Affects bosses etc
+bUseSingleplayerSettings=false
+; This allows spikeywalls etc to damage tames without rider (prevents kamikaze runs)
+bPassiveDefensesDamageRiderlessDinos=true
+; Prevents respawn spamming in PvP
+bIncreasePvPRespawnInterval=true
+; Reduces the radius in which resources don't respawn around players
+ResourceNoReplenishRadiusPlayers=0.300000
+; Reduces the radius in which resources don't respawn around buildings
+ResourceNoReplenishRadiusStructures=0.300000
+; Allows buildings of higher floors on a saddle platform
+bAllowPlatformSaddleMultiFloors=true
+; Respec as often as you want (Still needs a mindwipe though)
+bAllowUnlimitedRespecs=true
+; Don't use collision detection when building.
+bDisableStructurePlacementCollision=true
+; Better loot from Supply Drops
+SupplyCrateLootQualityMultiplier=3.0
+; Better loot from Fishing
+FishingLootQualityMultiplier=3.0
+; Allow flyer speed leveling
+bAllowFlyerSpeedLeveling=true
+
+; ---------------------------------------------------------------------------------------------------------------------
+; Engram Settings
+; ---------------------------------------------------------------------------------------------------------------------
+bAutoUnlockAllEngrams=true ; Enable to automatically unlock all Engrams as people reach the appropriate level.
+
+; ---------------------------------------------------------------------------------------------------------------------
+; These Settings affect the mating and eggs of Dinosaurs, making the playable experience more enjoyable.
+; By reducing these timers, or increasing multipliers, breeding dinos takes only hours instead of days.
+; ---------------------------------------------------------------------------------------------------------------------
+MatingIntervalMultiplier=0.003000
+EggHatchSpeedMultiplier=40.000000
+BabyMatureSpeedMultiplier=80.000000
+BabyCuddleIntervalMultiplier=0.010000
+BabyImprintAmountMultiplier=1.5
+
+
+; ---------------------------------------------------------------------------------------------------------------------
+; PvP and PvE Specific Settings
+; ---------------------------------------------------------------------------------------------------------------------
+; When enabled, PvE/PVP toggles with a timer.
+bAutoPvETimer=false
+; Place a shiny beacon where you died.
+bUseCorpseLocator=true
+; No Friendly Fire between tribe members and alliances.
+bDisableFriendlyFire=true
+bPvEDisableFriendlyFire=true
+
+; ---------------------------------------------------------------------------------------------------------------------
+; Genesis Specific Settings - These affect only the Genesis Map
+; ---------------------------------------------------------------------------------------------------------------------
+; This prevents people from building in mission zones (enabled by default)
+bGenesisUseStructuresPreventionVolume=true
+
+; ---------------------------------------------------------------------------------------------------------------------
+; Experience
+; ---------------------------------------------------------------------------------------------------------------------
+
+; Player Experience (up to level 200)
+LevelExperienceRampOverrides=(ExperiencePointsForLevel[0]=5,ExperiencePointsForLevel[1]=20,ExperiencePointsForLevel[2]=36,ExperiencePointsForLevel[3]=53,ExperiencePointsForLevel[4]=71,ExperiencePointsForLevel[5]=90,ExperiencePointsForLevel[6]=111,ExperiencePointsForLevel[7]=134,ExperiencePointsForLevel[8]=159,ExperiencePointsForLevel[9]=186,ExperiencePointsForLevel[10]=215,ExperiencePointsForLevel[11]=246,ExperiencePointsForLevel[12]=279,ExperiencePointsForLevel[13]=315,ExperiencePointsForLevel[14]=354,ExperiencePointsForLevel[15]=396,ExperiencePointsForLevel[16]=441,ExperiencePointsForLevel[17]=490,ExperiencePointsForLevel[18]=543,ExperiencePointsForLevel[19]=600,ExperiencePointsForLevel[20]=662,ExperiencePointsForLevel[21]=729,ExperiencePointsForLevel[22]=801,ExperiencePointsForLevel[23]=879,ExperiencePointsForLevel[24]=963,ExperiencePointsForLevel[25]=1054,ExperiencePointsForLevel[26]=1152,ExperiencePointsForLevel[27]=1258,ExperiencePointsForLevel[28]=1372,ExperiencePointsForLevel[29]=1495,ExperiencePointsForLevel[30]=1628,ExperiencePointsForLevel[31]=1772,ExperiencePointsForLevel[32]=1928,ExperiencePointsForLevel[33]=2096,ExperiencePointsForLevel[34]=2277,ExperiencePointsForLevel[35]=2472,ExperiencePointsForLevel[36]=2683,ExperiencePointsForLevel[37]=2911,ExperiencePointsForLevel[38]=3157,ExperiencePointsForLevel[39]=3423,ExperiencePointsForLevel[40]=3710,ExperiencePointsForLevel[41]=4020,ExperiencePointsForLevel[42]=4355,ExperiencePointsForLevel[43]=4717,ExperiencePointsForLevel[44]=5108,ExperiencePointsForLevel[45]=5530,ExperiencePointsForLevel[46]=5986,ExperiencePointsForLevel[47]=6478,ExperiencePointsForLevel[48]=7009,ExperiencePointsForLevel[49]=7582,ExperiencePointsForLevel[50]=8201,ExperiencePointsForLevel[51]=8870,ExperiencePointsForLevel[52]=9593,ExperiencePointsForLevel[53]=10374,ExperiencePointsForLevel[54]=11217,ExperiencePointsForLevel[55]=12127,ExperiencePointsForLevel[56]=13110,ExperiencePointsForLevel[57]=14172,ExperiencePointsForLevel[58]=15319,ExperiencePointsForLevel[59]=16558,ExperiencePointsForLevel[60]=17896,ExperiencePointsForLevel[61]=19341,ExperiencePointsForLevel[62]=20902,ExperiencePointsForLevel[63]=22588,ExperiencePointsForLevel[64]=24409,ExperiencePointsForLevel[65]=26376,ExperiencePointsForLevel[66]=28500,ExperiencePointsForLevel[67]=30794,ExperiencePointsForLevel[68]=33272,ExperiencePointsForLevel[69]=35948,ExperiencePointsForLevel[70]=38838,ExperiencePointsForLevel[71]=41959,ExperiencePointsForLevel[72]=45330,ExperiencePointsForLevel[73]=48971,ExperiencePointsForLevel[74]=52903,ExperiencePointsForLevel[75]=57150,ExperiencePointsForLevel[76]=61737,ExperiencePointsForLevel[77]=66691,ExperiencePointsForLevel[78]=72041,ExperiencePointsForLevel[79]=77819,ExperiencePointsForLevel[80]=84059,ExperiencePointsForLevel[81]=90798,ExperiencePointsForLevel[82]=98076,ExperiencePointsForLevel[83]=105936,ExperiencePointsForLevel[84]=114425,ExperiencePointsForLevel[85]=123593,ExperiencePointsForLevel[86]=133494,ExperiencePointsForLevel[87]=144187,ExperiencePointsForLevel[88]=155735,ExperiencePointsForLevel[89]=168207,ExperiencePointsForLevel[90]=181677,ExperiencePointsForLevel[91]=196225,ExperiencePointsForLevel[92]=211937,ExperiencePointsForLevel[93]=228906,ExperiencePointsForLevel[94]=247233,ExperiencePointsForLevel[95]=267026,ExperiencePointsForLevel[96]=288402,ExperiencePointsForLevel[97]=311488,ExperiencePointsForLevel[98]=336421,ExperiencePointsForLevel[99]=363349,ExperiencePointsForLevel[100]=392431,ExperiencePointsForLevel[101]=423840,ExperiencePointsForLevel[102]=457762,ExperiencePointsForLevel[103]=494398,ExperiencePointsForLevel[104]=533965,ExperiencePointsForLevel[105]=576697,ExperiencePointsForLevel[106]=622848,ExperiencePointsForLevel[107]=672691,ExperiencePointsForLevel[108]=726521,ExperiencePointsForLevel[109]=784657,ExperiencePointsForLevel[110]=847444,ExperiencePointsForLevel[111]=915254,ExperiencePointsForLevel[112]=988489,ExperiencePointsForLevel[113]=1067583,ExperiencePointsForLevel[114]=1153005,ExperiencePointsForLevel[115]=1245261,ExperiencePointsForLevel[116]=1344897,ExperiencePointsForLevel[117]=1452504,ExperiencePointsForLevel[118]=1568720,ExperiencePointsForLevel[119]=1694233,ExperiencePointsForLevel[120]=1829787,ExperiencePointsForLevel[121]=1976185,ExperiencePointsForLevel[122]=2134295,ExperiencePointsForLevel[123]=2305054,ExperiencePointsForLevel[124]=2489474,ExperiencePointsForLevel[125]=2688648,ExperiencePointsForLevel[126]=2903756,ExperiencePointsForLevel[127]=3136073,ExperiencePointsForLevel[128]=3386975,ExperiencePointsForLevel[129]=3657949,ExperiencePointsForLevel[130]=3950601,ExperiencePointsForLevel[131]=4266665,ExperiencePointsForLevel[132]=4608014,ExperiencePointsForLevel[133]=4976671,ExperiencePointsForLevel[134]=5374821,ExperiencePointsForLevel[135]=5804823,ExperiencePointsForLevel[136]=6269225,ExperiencePointsForLevel[137]=6770779,ExperiencePointsForLevel[138]=7312457,ExperiencePointsForLevel[139]=7897469,ExperiencePointsForLevel[140]=8529282,ExperiencePointsForLevel[141]=9211640,ExperiencePointsForLevel[142]=9948587,ExperiencePointsForLevel[143]=10744490,ExperiencePointsForLevel[144]=11604065,ExperiencePointsForLevel[145]=12532406,ExperiencePointsForLevel[146]=13535014,ExperiencePointsForLevel[147]=14617831,ExperiencePointsForLevel[148]=15787273,ExperiencePointsForLevel[149]=17050270,ExperiencePointsForLevel[150]=18414307,ExperiencePointsForLevel[151]=19887467,ExperiencePointsForLevel[152]=21478480,ExperiencePointsForLevel[153]=23196774,ExperiencePointsForLevel[154]=25052532,ExperiencePointsForLevel[155]=27056751,ExperiencePointsForLevel[156]=29221308,ExperiencePointsForLevel[157]=31559030,ExperiencePointsForLevel[158]=34083770,ExperiencePointsForLevel[159]=36810489,ExperiencePointsForLevel[160]=39755346,ExperiencePointsForLevel[161]=42935792,ExperiencePointsForLevel[162]=46370674,ExperiencePointsForLevel[163]=50080347,ExperiencePointsForLevel[164]=54086794,ExperiencePointsForLevel[165]=58413757,ExperiencePointsForLevel[166]=63086877,ExperiencePointsForLevel[167]=68133847,ExperiencePointsForLevel[168]=73584575,ExperiencePointsForLevel[169]=79471361,ExperiencePointsForLevel[170]=85829090,ExperiencePointsForLevel[171]=92695437,ExperiencePointsForLevel[172]=100111092,ExperiencePointsForLevel[173]=108119999,ExperiencePointsForLevel[174]=116769619,ExperiencePointsForLevel[175]=126111209,ExperiencePointsForLevel[176]=136200126,ExperiencePointsForLevel[177]=147096156,ExperiencePointsForLevel[178]=158863868,ExperiencePointsForLevel[179]=171572997,ExperiencePointsForLevel[180]=185298856,ExperiencePointsForLevel[181]=200122784,ExperiencePointsForLevel[182]=216132626,ExperiencePointsForLevel[183]=233423255,ExperiencePointsForLevel[184]=252097134,ExperiencePointsForLevel[185]=272264923,ExperiencePointsForLevel[186]=294046135,ExperiencePointsForLevel[187]=317569844,ExperiencePointsForLevel[188]=342975450,ExperiencePointsForLevel[189]=370413504,ExperiencePointsForLevel[190]=400046602,ExperiencePointsForLevel[191]=432050348,ExperiencePointsForLevel[192]=466614394,ExperiencePointsForLevel[193]=503943564,ExperiencePointsForLevel[194]=544259068,ExperiencePointsForLevel[195]=587799812,ExperiencePointsForLevel[196]=634823816,ExperiencePointsForLevel[197]=685609740,ExperiencePointsForLevel[198]=740458538,ExperiencePointsForLevel[199]=799695240,ExperiencePointsForLevel[200]=863670878)
+
+; Dino Experience (up to level 400)
+LevelExperienceRampOverrides=(ExperiencePointsForLevel[0]=5,ExperiencePointsForLevel[1]=20,ExperiencePointsForLevel[2]=36,ExperiencePointsForLevel[3]=53,ExperiencePointsForLevel[4]=71,ExperiencePointsForLevel[5]=90,ExperiencePointsForLevel[6]=111,ExperiencePointsForLevel[7]=134,ExperiencePointsForLevel[8]=159,ExperiencePointsForLevel[9]=186,ExperiencePointsForLevel[10]=215,ExperiencePointsForLevel[11]=246,ExperiencePointsForLevel[12]=279,ExperiencePointsForLevel[13]=315,ExperiencePointsForLevel[14]=354,ExperiencePointsForLevel[15]=396,ExperiencePointsForLevel[16]=441,ExperiencePointsForLevel[17]=490,ExperiencePointsForLevel[18]=543,ExperiencePointsForLevel[19]=600,ExperiencePointsForLevel[20]=662,ExperiencePointsForLevel[21]=729,ExperiencePointsForLevel[22]=801,ExperiencePointsForLevel[23]=879,ExperiencePointsForLevel[24]=963,ExperiencePointsForLevel[25]=1054,ExperiencePointsForLevel[26]=1152,ExperiencePointsForLevel[27]=1258,ExperiencePointsForLevel[28]=1372,ExperiencePointsForLevel[29]=1495,ExperiencePointsForLevel[30]=1628,ExperiencePointsForLevel[31]=1772,ExperiencePointsForLevel[32]=1928,ExperiencePointsForLevel[33]=2096,ExperiencePointsForLevel[34]=2277,ExperiencePointsForLevel[35]=2472,ExperiencePointsForLevel[36]=2683,ExperiencePointsForLevel[37]=2911,ExperiencePointsForLevel[38]=3157,ExperiencePointsForLevel[39]=3423,ExperiencePointsForLevel[40]=3710,ExperiencePointsForLevel[41]=4020,ExperiencePointsForLevel[42]=4355,ExperiencePointsForLevel[43]=4717,ExperiencePointsForLevel[44]=5108,ExperiencePointsForLevel[45]=5530,ExperiencePointsForLevel[46]=5986,ExperiencePointsForLevel[47]=6478,ExperiencePointsForLevel[48]=7009,ExperiencePointsForLevel[49]=7582,ExperiencePointsForLevel[50]=8201,ExperiencePointsForLevel[51]=8870,ExperiencePointsForLevel[52]=9593,ExperiencePointsForLevel[53]=10374,ExperiencePointsForLevel[54]=11217,ExperiencePointsForLevel[55]=12127,ExperiencePointsForLevel[56]=13110,ExperiencePointsForLevel[57]=14172,ExperiencePointsForLevel[58]=15319,ExperiencePointsForLevel[59]=16558,ExperiencePointsForLevel[60]=17896,ExperiencePointsForLevel[61]=19341,ExperiencePointsForLevel[62]=20902,ExperiencePointsForLevel[63]=22588,ExperiencePointsForLevel[64]=24409,ExperiencePointsForLevel[65]=26376,ExperiencePointsForLevel[66]=28500,ExperiencePointsForLevel[67]=30794,ExperiencePointsForLevel[68]=33272,ExperiencePointsForLevel[69]=35948,ExperiencePointsForLevel[70]=38838,ExperiencePointsForLevel[71]=41959,ExperiencePointsForLevel[72]=45330,ExperiencePointsForLevel[73]=48971,ExperiencePointsForLevel[74]=52903,ExperiencePointsForLevel[75]=57150,ExperiencePointsForLevel[76]=61737,ExperiencePointsForLevel[77]=66691,ExperiencePointsForLevel[78]=72041,ExperiencePointsForLevel[79]=77819,ExperiencePointsForLevel[80]=84059,ExperiencePointsForLevel[81]=90798,ExperiencePointsForLevel[82]=98076,ExperiencePointsForLevel[83]=105936,ExperiencePointsForLevel[84]=114425,ExperiencePointsForLevel[85]=123593,ExperiencePointsForLevel[86]=133494,ExperiencePointsForLevel[87]=144187,ExperiencePointsForLevel[88]=155735,ExperiencePointsForLevel[89]=168207,ExperiencePointsForLevel[90]=181677,ExperiencePointsForLevel[91]=196225,ExperiencePointsForLevel[92]=211937,ExperiencePointsForLevel[93]=228906,ExperiencePointsForLevel[94]=247233,ExperiencePointsForLevel[95]=267026,ExperiencePointsForLevel[96]=288402,ExperiencePointsForLevel[97]=311488,ExperiencePointsForLevel[98]=336421,ExperiencePointsForLevel[99]=363349,ExperiencePointsForLevel[100]=392431,ExperiencePointsForLevel[101]=423840,ExperiencePointsForLevel[102]=457762,ExperiencePointsForLevel[103]=494398,ExperiencePointsForLevel[104]=533965,ExperiencePointsForLevel[105]=576697,ExperiencePointsForLevel[106]=622848,ExperiencePointsForLevel[107]=672691,ExperiencePointsForLevel[108]=726521,ExperiencePointsForLevel[109]=784657,ExperiencePointsForLevel[110]=847444,ExperiencePointsForLevel[111]=915254,ExperiencePointsForLevel[112]=988489,ExperiencePointsForLevel[113]=1067583,ExperiencePointsForLevel[114]=1153005,ExperiencePointsForLevel[115]=1245261,ExperiencePointsForLevel[116]=1344897,ExperiencePointsForLevel[117]=1452504,ExperiencePointsForLevel[118]=1568720,ExperiencePointsForLevel[119]=1694233,ExperiencePointsForLevel[120]=1829787,ExperiencePointsForLevel[121]=1976185,ExperiencePointsForLevel[122]=2134295,ExperiencePointsForLevel[123]=2305054,ExperiencePointsForLevel[124]=2489474,ExperiencePointsForLevel[125]=2688648,ExperiencePointsForLevel[126]=2903756,ExperiencePointsForLevel[127]=3136073,ExperiencePointsForLevel[128]=3386975,ExperiencePointsForLevel[129]=3657949,ExperiencePointsForLevel[130]=3950601,ExperiencePointsForLevel[131]=4266665,ExperiencePointsForLevel[132]=4608014,ExperiencePointsForLevel[133]=4976671,ExperiencePointsForLevel[134]=5374821,ExperiencePointsForLevel[135]=5804823,ExperiencePointsForLevel[136]=6269225,ExperiencePointsForLevel[137]=6770779,ExperiencePointsForLevel[138]=7312457,ExperiencePointsForLevel[139]=7897469,ExperiencePointsForLevel[140]=8529282,ExperiencePointsForLevel[141]=9211640,ExperiencePointsForLevel[142]=9948587,ExperiencePointsForLevel[143]=10744490,ExperiencePointsForLevel[144]=11604065,ExperiencePointsForLevel[145]=12532406,ExperiencePointsForLevel[146]=13535014,ExperiencePointsForLevel[147]=14617831,ExperiencePointsForLevel[148]=15787273,ExperiencePointsForLevel[149]=17050270,ExperiencePointsForLevel[150]=18414307,ExperiencePointsForLevel[151]=19887467,ExperiencePointsForLevel[152]=21478480,ExperiencePointsForLevel[153]=23196774,ExperiencePointsForLevel[154]=25052532,ExperiencePointsForLevel[155]=27056751,ExperiencePointsForLevel[156]=29221308,ExperiencePointsForLevel[157]=31559030,ExperiencePointsForLevel[158]=34083770,ExperiencePointsForLevel[159]=36810489,ExperiencePointsForLevel[160]=39755346,ExperiencePointsForLevel[161]=42935792,ExperiencePointsForLevel[162]=46370674,ExperiencePointsForLevel[163]=50080347,ExperiencePointsForLevel[164]=54086794,ExperiencePointsForLevel[165]=58413757,ExperiencePointsForLevel[166]=63086877,ExperiencePointsForLevel[167]=68133847,ExperiencePointsForLevel[168]=73584575,ExperiencePointsForLevel[169]=79471361,ExperiencePointsForLevel[170]=85829090,ExperiencePointsForLevel[171]=92695437,ExperiencePointsForLevel[172]=100111092,ExperiencePointsForLevel[173]=108119999,ExperiencePointsForLevel[174]=116769619,ExperiencePointsForLevel[175]=126111209,ExperiencePointsForLevel[176]=136200126,ExperiencePointsForLevel[177]=147096156,ExperiencePointsForLevel[178]=158863868,ExperiencePointsForLevel[179]=171572997,ExperiencePointsForLevel[180]=185298856,ExperiencePointsForLevel[181]=200122784,ExperiencePointsForLevel[182]=216132626,ExperiencePointsForLevel[183]=233423255,ExperiencePointsForLevel[184]=252097134,ExperiencePointsForLevel[185]=272264923,ExperiencePointsForLevel[186]=294046135,ExperiencePointsForLevel[187]=317569844,ExperiencePointsForLevel[188]=342975450,ExperiencePointsForLevel[189]=370413504,ExperiencePointsForLevel[190]=400046602,ExperiencePointsForLevel[191]=432050348,ExperiencePointsForLevel[192]=466614394,ExperiencePointsForLevel[193]=503943564,ExperiencePointsForLevel[194]=544259068,ExperiencePointsForLevel[195]=587799812,ExperiencePointsForLevel[196]=634823816,ExperiencePointsForLevel[197]=685609740,ExperiencePointsForLevel[198]=740458538,ExperiencePointsForLevel[199]=799695240,ExperiencePointsForLevel[200]=863670878,ExperiencePointsForLevel[201]=932764567,ExperiencePointsForLevel[202]=1007385751,ExperiencePointsForLevel[203]=1087976630,ExperiencePointsForLevel[204]=1175014779,ExperiencePointsForLevel[205]=1269015980,ExperiencePointsForLevel[206]=1370537277,ExperiencePointsForLevel[207]=1480180278,ExperiencePointsForLevel[208]=1598594719,ExperiencePointsForLevel[209]=1726482315,ExperiencePointsForLevel[210]=1864600919,ExperiencePointsForLevel[211]=2013769011,ExperiencePointsForLevel[212]=2174870550,ExperiencePointsForLevel[213]=2348860212,ExperiencePointsForLevel[214]=2536769047,ExperiencePointsForLevel[215]=2739710589,ExperiencePointsForLevel[216]=2958887454,ExperiencePointsForLevel[217]=3195598468,ExperiencePointsForLevel[218]=3451246363,ExperiencePointsForLevel[219]=3727346090,ExperiencePointsForLevel[220]=4025533795,ExperiencePointsForLevel[221]=4347576516,ExperiencePointsForLevel[222]=4695382655,ExperiencePointsForLevel[223]=5071013285,ExperiencePointsForLevel[224]=5476694365,ExperiencePointsForLevel[225]=5914829931,ExperiencePointsForLevel[226]=6388016342,ExperiencePointsForLevel[227]=6899057666,ExperiencePointsForLevel[228]=7450982296,ExperiencePointsForLevel[229]=8047060896,ExperiencePointsForLevel[230]=8690825784,ExperiencePointsForLevel[231]=9386091863,ExperiencePointsForLevel[232]=10136979228,ExperiencePointsForLevel[233]=10947937582,ExperiencePointsForLevel[234]=11823772604,ExperiencePointsForLevel[235]=12769674428,ExperiencePointsForLevel[236]=13791248398,ExperiencePointsForLevel[237]=14894548286,ExperiencePointsForLevel[238]=16086112165,ExperiencePointsForLevel[239]=17373001154,ExperiencePointsForLevel[240]=18762841262,ExperiencePointsForLevel[241]=20263868579,ExperiencePointsForLevel[242]=21884978081,ExperiencePointsForLevel[243]=23635776343,ExperiencePointsForLevel[244]=25526638466,ExperiencePointsForLevel[245]=27568769559,ExperiencePointsForLevel[246]=29774271139,ExperiencePointsForLevel[247]=32156212845,ExperiencePointsForLevel[248]=34728709887,ExperiencePointsForLevel[249]=37507006692,ExperiencePointsForLevel[250]=40507567241,ExperiencePointsForLevel[251]=43748172634,ExperiencePointsForLevel[252]=47248026458,ExperiencePointsForLevel[253]=51027868588,ExperiencePointsForLevel[254]=55110098088,ExperiencePointsForLevel[255]=59518905948,ExperiencePointsForLevel[256]=64280418437,ExperiencePointsForLevel[257]=69422851925,ExperiencePointsForLevel[258]=74976680092,ExperiencePointsForLevel[259]=80974814512,ExperiencePointsForLevel[260]=87452799686,ExperiencePointsForLevel[261]=94449023674,ExperiencePointsForLevel[262]=102004945581,ExperiencePointsForLevel[263]=110165341241,ExperiencePointsForLevel[264]=118978568554,ExperiencePointsForLevel[265]=128496854052,ExperiencePointsForLevel[266]=138776602390,ExperiencePointsForLevel[267]=149878730595,ExperiencePointsForLevel[268]=161869029056,ExperiencePointsForLevel[269]=174818551394,ExperiencePointsForLevel[270]=188804035519,ExperiencePointsForLevel[271]=203908358374,ExperiencePointsForLevel[272]=220221027057,ExperiencePointsForLevel[273]=237838709235,ExperiencePointsForLevel[274]=256865805987,ExperiencePointsForLevel[275]=277415070479,ExperiencePointsForLevel[276]=299608276130,ExperiencePointsForLevel[277]=323576938233,ExperiencePointsForLevel[278]=349463093304,ExperiencePointsForLevel[279]=377420140781,ExperiencePointsForLevel[280]=407613752056,ExperiencePointsForLevel[281]=440222852233,ExperiencePointsForLevel[282]=475440680424,ExperiencePointsForLevel[283]=513475934870,ExperiencePointsForLevel[284]=554554009672,ExperiencePointsForLevel[285]=598918330458,ExperiencePointsForLevel[286]=646831796907,ExperiencePointsForLevel[287]=698578340672,ExperiencePointsForLevel[288]=754464607938,ExperiencePointsForLevel[289]=814821776585,ExperiencePointsForLevel[290]=880007518724,ExperiencePointsForLevel[291]=950408120234,ExperiencePointsForLevel[292]=1026440769865,ExperiencePointsForLevel[293]=1108556031466,ExperiencePointsForLevel[294]=1197240513995,ExperiencePointsForLevel[295]=1293019755126,ExperiencePointsForLevel[296]=1396461335547,ExperiencePointsForLevel[297]=1508178242402,ExperiencePointsForLevel[298]=1628832501805,ExperiencePointsForLevel[299]=1759139101960,ExperiencePointsForLevel[300]=1899870230127,ExperiencePointsForLevel[301]=2051859848547,ExperiencePointsForLevel[302]=2216008636441,ExperiencePointsForLevel[303]=2393289327367,ExperiencePointsForLevel[304]=2584752473567,ExperiencePointsForLevel[305]=2791532671463,ExperiencePointsForLevel[306]=3014855285191,ExperiencePointsForLevel[307]=3256043708017,ExperiencePointsForLevel[308]=3516527204669,ExperiencePointsForLevel[309]=3797849381053,ExperiencePointsForLevel[310]=4101677331548,ExperiencePointsForLevel[311]=4429811518083,ExperiencePointsForLevel[312]=4784196439541,ExperiencePointsForLevel[313]=5166932154716,ExperiencePointsForLevel[314]=5580286727105,ExperiencePointsForLevel[315]=6026709665285,ExperiencePointsForLevel[316]=6508846438519,ExperiencePointsForLevel[317]=7029554153612,ExperiencePointsForLevel[318]=7591918485912,ExperiencePointsForLevel[319]=8199271964796,ExperiencePointsForLevel[320]=8855213721991,ExperiencePointsForLevel[321]=9563630819762,ExperiencePointsForLevel[322]=10328721285355,ExperiencePointsForLevel[323]=11155018988195,ExperiencePointsForLevel[324]=12047420507262,ExperiencePointsForLevel[325]=13011214147854,ExperiencePointsForLevel[326]=14052111279693,ExperiencePointsForLevel[327]=15176280182079,ExperiencePointsForLevel[328]=16390382596656,ExperiencePointsForLevel[329]=17701613204399,ExperiencePointsForLevel[330]=19117742260761,ExperiencePointsForLevel[331]=20647161641632,ExperiencePointsForLevel[332]=22298934572973,ExperiencePointsForLevel[333]=24082849338821,ExperiencePointsForLevel[334]=26009477285937,ExperiencePointsForLevel[335]=28090235468822,ExperiencePointsForLevel[336]=30337454306338,ExperiencePointsForLevel[337]=32764450650855,ExperiencePointsForLevel[338]=35385606702933,ExperiencePointsForLevel[339]=38216455239177,ExperiencePointsForLevel[340]=41273771658321,ExperiencePointsForLevel[341]=44575673390997,ExperiencePointsForLevel[342]=48141727262287,ExperiencePointsForLevel[343]=51993065443280,ExperiencePointsForLevel[344]=56152510678752,ExperiencePointsForLevel[345]=60644711533062,ExperiencePointsForLevel[346]=65496288455717,ExperiencePointsForLevel[347]=70735991532184,ExperiencePointsForLevel[348]=76394870854768,ExperiencePointsForLevel[349]=82506460523159,ExperiencePointsForLevel[350]=89106977365021,ExperiencePointsForLevel[351]=96235535554232,ExperiencePointsForLevel[352]=103934378398580,ExperiencePointsForLevel[353]=112249128670476,ExperiencePointsForLevel[354]=121229058964124,ExperiencePointsForLevel[355]=130927383681264,ExperiencePointsForLevel[356]=141401574375775,ExperiencePointsForLevel[357]=152713700325847,ExperiencePointsForLevel[358]=164930796351925,ExperiencePointsForLevel[359]=178125260060089,ExperiencePointsForLevel[360]=192375280864906,ExperiencePointsForLevel[361]=207765303334108,ExperiencePointsForLevel[362]=224386527600846,ExperiencePointsForLevel[363]=242337449808923,ExperiencePointsForLevel[364]=261724445793646,ExperiencePointsForLevel[365]=282662401457147,ExperiencePointsForLevel[366]=305275393573728,ExperiencePointsForLevel[367]=329697425059635,ExperiencePointsForLevel[368]=356073219064415,ExperiencePointsForLevel[369]=384559076589577,ExperiencePointsForLevel[370]=415323802716752,ExperiencePointsForLevel[371]=448549706934101,ExperiencePointsForLevel[372]=484433683488838,ExperiencePointsForLevel[373]=523188378167954,ExperiencePointsForLevel[374]=565043448421399,ExperiencePointsForLevel[375]=610246924295120,ExperiencePointsForLevel[376]=659066678238739,ExperiencePointsForLevel[377]=711792012497848,ExperiencePointsForLevel[378]=768735373497686,ExperiencePointsForLevel[379]=830234203377511,ExperiencePointsForLevel[380]=896652939647722,ExperiencePointsForLevel[381]=968385174819550,ExperiencePointsForLevel[382]=1045855988805124,ExperiencePointsForLevel[383]=1129524467909544,ExperiencePointsForLevel[384]=1219886425342318,ExperiencePointsForLevel[385]=1317477339369714,ExperiencePointsForLevel[386]=1422875526519302,ExperiencePointsForLevel[387]=1536705568640857,ExperiencePointsForLevel[388]=1659642014132136,ExperiencePointsForLevel[389]=1792413375262717,ExperiencePointsForLevel[390]=1935806445283745,ExperiencePointsForLevel[391]=2090670960906455,ExperiencePointsForLevel[392]=2257924637778982,ExperiencePointsForLevel[393]=2438558608801311,ExperiencePointsForLevel[394]=2633643297505426,ExperiencePointsForLevel[395]=2844334761305870,ExperiencePointsForLevel[396]=3071881542210350,ExperiencePointsForLevel[397]=3317632065587188,ExperiencePointsForLevel[398]=3583042630834173,ExperiencePointsForLevel[399]=3869686041300917,ExperiencePointsForLevel[400]=4179260924605001)
+
+; Player Engram Point Overrides
+OverridePlayerLevelEngramPoints=8
+OverridePlayerLevelEngramPoints=8
+OverridePlayerLevelEngramPoints=8
+OverridePlayerLevelEngramPoints=8
+OverridePlayerLevelEngramPoints=8
+OverridePlayerLevelEngramPoints=8
+OverridePlayerLevelEngramPoints=8
+OverridePlayerLevelEngramPoints=8
+OverridePlayerLevelEngramPoints=8
+OverridePlayerLevelEngramPoints=8
+OverridePlayerLevelEngramPoints=10
+OverridePlayerLevelEngramPoints=10
+OverridePlayerLevelEngramPoints=10
+OverridePlayerLevelEngramPoints=10
+OverridePlayerLevelEngramPoints=10
+OverridePlayerLevelEngramPoints=10
+OverridePlayerLevelEngramPoints=10
+OverridePlayerLevelEngramPoints=10
+OverridePlayerLevelEngramPoints=10
+OverridePlayerLevelEngramPoints=10
+OverridePlayerLevelEngramPoints=13
+OverridePlayerLevelEngramPoints=13
+OverridePlayerLevelEngramPoints=13
+OverridePlayerLevelEngramPoints=13
+OverridePlayerLevelEngramPoints=13
+OverridePlayerLevelEngramPoints=13
+OverridePlayerLevelEngramPoints=13
+OverridePlayerLevelEngramPoints=13
+OverridePlayerLevelEngramPoints=13
+OverridePlayerLevelEngramPoints=13
+OverridePlayerLevelEngramPoints=16
+OverridePlayerLevelEngramPoints=16
+OverridePlayerLevelEngramPoints=16
+OverridePlayerLevelEngramPoints=16
+OverridePlayerLevelEngramPoints=16
+OverridePlayerLevelEngramPoints=16
+OverridePlayerLevelEngramPoints=16
+OverridePlayerLevelEngramPoints=16
+OverridePlayerLevelEngramPoints=16
+OverridePlayerLevelEngramPoints=16
+OverridePlayerLevelEngramPoints=20
+OverridePlayerLevelEngramPoints=20
+OverridePlayerLevelEngramPoints=20
+OverridePlayerLevelEngramPoints=20
+OverridePlayerLevelEngramPoints=20
+OverridePlayerLevelEngramPoints=20
+OverridePlayerLevelEngramPoints=20
+OverridePlayerLevelEngramPoints=20
+OverridePlayerLevelEngramPoints=20
+OverridePlayerLevelEngramPoints=20
+OverridePlayerLevelEngramPoints=25
+OverridePlayerLevelEngramPoints=25
+OverridePlayerLevelEngramPoints=25
+OverridePlayerLevelEngramPoints=25
+OverridePlayerLevelEngramPoints=25
+OverridePlayerLevelEngramPoints=25
+OverridePlayerLevelEngramPoints=25
+OverridePlayerLevelEngramPoints=25
+OverridePlayerLevelEngramPoints=25
+OverridePlayerLevelEngramPoints=25
+OverridePlayerLevelEngramPoints=31
+OverridePlayerLevelEngramPoints=31
+OverridePlayerLevelEngramPoints=31
+OverridePlayerLevelEngramPoints=31
+OverridePlayerLevelEngramPoints=31
+OverridePlayerLevelEngramPoints=31
+OverridePlayerLevelEngramPoints=31
+OverridePlayerLevelEngramPoints=31
+OverridePlayerLevelEngramPoints=31
+OverridePlayerLevelEngramPoints=31
+OverridePlayerLevelEngramPoints=39
+OverridePlayerLevelEngramPoints=39
+OverridePlayerLevelEngramPoints=39
+OverridePlayerLevelEngramPoints=39
+OverridePlayerLevelEngramPoints=39
+OverridePlayerLevelEngramPoints=39
+OverridePlayerLevelEngramPoints=39
+OverridePlayerLevelEngramPoints=39
+OverridePlayerLevelEngramPoints=39
+OverridePlayerLevelEngramPoints=39
+OverridePlayerLevelEngramPoints=49
+OverridePlayerLevelEngramPoints=49
+OverridePlayerLevelEngramPoints=49
+OverridePlayerLevelEngramPoints=49
+OverridePlayerLevelEngramPoints=49
+OverridePlayerLevelEngramPoints=49
+OverridePlayerLevelEngramPoints=49
+OverridePlayerLevelEngramPoints=49
+OverridePlayerLevelEngramPoints=49
+OverridePlayerLevelEngramPoints=49
+OverridePlayerLevelEngramPoints=61
+OverridePlayerLevelEngramPoints=61
+OverridePlayerLevelEngramPoints=61
+OverridePlayerLevelEngramPoints=61
+OverridePlayerLevelEngramPoints=61
+OverridePlayerLevelEngramPoints=61
+OverridePlayerLevelEngramPoints=61
+OverridePlayerLevelEngramPoints=61
+OverridePlayerLevelEngramPoints=61
+OverridePlayerLevelEngramPoints=61
+OverridePlayerLevelEngramPoints=76
+OverridePlayerLevelEngramPoints=76
+OverridePlayerLevelEngramPoints=76
+OverridePlayerLevelEngramPoints=76
+OverridePlayerLevelEngramPoints=76
+OverridePlayerLevelEngramPoints=76
+OverridePlayerLevelEngramPoints=76
+OverridePlayerLevelEngramPoints=76
+OverridePlayerLevelEngramPoints=76
+OverridePlayerLevelEngramPoints=76
+OverridePlayerLevelEngramPoints=95
+OverridePlayerLevelEngramPoints=95
+OverridePlayerLevelEngramPoints=95
+OverridePlayerLevelEngramPoints=95
+OverridePlayerLevelEngramPoints=95
+OverridePlayerLevelEngramPoints=95
+OverridePlayerLevelEngramPoints=95
+OverridePlayerLevelEngramPoints=95
+OverridePlayerLevelEngramPoints=95
+OverridePlayerLevelEngramPoints=95
+OverridePlayerLevelEngramPoints=119
+OverridePlayerLevelEngramPoints=119
+OverridePlayerLevelEngramPoints=119
+OverridePlayerLevelEngramPoints=119
+OverridePlayerLevelEngramPoints=119
+OverridePlayerLevelEngramPoints=119
+OverridePlayerLevelEngramPoints=119
+OverridePlayerLevelEngramPoints=119
+OverridePlayerLevelEngramPoints=119
+OverridePlayerLevelEngramPoints=119
+OverridePlayerLevelEngramPoints=149
+OverridePlayerLevelEngramPoints=149
+OverridePlayerLevelEngramPoints=149
+OverridePlayerLevelEngramPoints=149
+OverridePlayerLevelEngramPoints=149
+OverridePlayerLevelEngramPoints=149
+OverridePlayerLevelEngramPoints=149
+OverridePlayerLevelEngramPoints=149
+OverridePlayerLevelEngramPoints=149
+OverridePlayerLevelEngramPoints=149
+OverridePlayerLevelEngramPoints=186
+OverridePlayerLevelEngramPoints=186
+OverridePlayerLevelEngramPoints=186
+OverridePlayerLevelEngramPoints=186
+OverridePlayerLevelEngramPoints=186
+OverridePlayerLevelEngramPoints=186
+OverridePlayerLevelEngramPoints=186
+OverridePlayerLevelEngramPoints=186
+OverridePlayerLevelEngramPoints=186
+OverridePlayerLevelEngramPoints=186
+OverridePlayerLevelEngramPoints=233
+OverridePlayerLevelEngramPoints=233
+OverridePlayerLevelEngramPoints=233
+OverridePlayerLevelEngramPoints=233
+OverridePlayerLevelEngramPoints=233
+OverridePlayerLevelEngramPoints=233
+OverridePlayerLevelEngramPoints=233
+OverridePlayerLevelEngramPoints=233
+OverridePlayerLevelEngramPoints=233
+OverridePlayerLevelEngramPoints=233
+OverridePlayerLevelEngramPoints=291
+OverridePlayerLevelEngramPoints=291
+OverridePlayerLevelEngramPoints=291
+OverridePlayerLevelEngramPoints=291
+OverridePlayerLevelEngramPoints=291
+OverridePlayerLevelEngramPoints=291
+OverridePlayerLevelEngramPoints=291
+OverridePlayerLevelEngramPoints=291
+OverridePlayerLevelEngramPoints=291
+OverridePlayerLevelEngramPoints=291
+OverridePlayerLevelEngramPoints=364
+OverridePlayerLevelEngramPoints=364
+OverridePlayerLevelEngramPoints=364
+OverridePlayerLevelEngramPoints=364
+OverridePlayerLevelEngramPoints=364
+OverridePlayerLevelEngramPoints=364
+OverridePlayerLevelEngramPoints=364
+OverridePlayerLevelEngramPoints=364
+OverridePlayerLevelEngramPoints=364
+OverridePlayerLevelEngramPoints=364
+OverridePlayerLevelEngramPoints=455
+OverridePlayerLevelEngramPoints=455
+OverridePlayerLevelEngramPoints=455
+OverridePlayerLevelEngramPoints=455
+OverridePlayerLevelEngramPoints=455
+OverridePlayerLevelEngramPoints=455
+OverridePlayerLevelEngramPoints=455
+OverridePlayerLevelEngramPoints=455
+OverridePlayerLevelEngramPoints=455
+OverridePlayerLevelEngramPoints=455
+OverridePlayerLevelEngramPoints=569
+OverridePlayerLevelEngramPoints=569
+OverridePlayerLevelEngramPoints=569
+OverridePlayerLevelEngramPoints=569
+OverridePlayerLevelEngramPoints=569
+OverridePlayerLevelEngramPoints=569
+OverridePlayerLevelEngramPoints=569
+OverridePlayerLevelEngramPoints=569
+OverridePlayerLevelEngramPoints=569
+OverridePlayerLevelEngramPoints=569
+OverridePlayerLevelEngramPoints=711
+
+; Max experience
+OverrideMaxExperiencePointsPlayer=863670878
+OverrideMaxExperiencePointsDino=4179260924605001
+
+; ---------------------------------------------------------------------------------------------------------------------
+; Experience
+; ---------------------------------------------------------------------------------------------------------------------
+
+; 0: Health,
+; 1: Stamina,
+; 2: Torpidity,
+; 3: Oxygen,
+; 4: Food,
+; 5: Water,
+; 6: Temperature,
+; 7: Weight,
+; 8: MeleeDamageMultiplier,
+; 9: SpeedMultiplier,
+; 10: TemperatureFortitude,
+; 11: CraftingSpeedMultiplier
+
+; Player Stats Multipliers
+PerLevelStatsMultiplier_Player[0]=2
+PerLevelStatsMultiplier_Player[1]=2
+PerLevelStatsMultiplier_Player[2]=1
+PerLevelStatsMultiplier_Player[3]=1
+PerLevelStatsMultiplier_Player[4]=1
+PerLevelStatsMultiplier_Player[5]=1
+PerLevelStatsMultiplier_Player[6]=2
+PerLevelStatsMultiplier_Player[7]=60
+PerLevelStatsMultiplier_Player[8]=2
+PerLevelStatsMultiplier_Player[9]=5
+PerLevelStatsMultiplier_Player[10]=5
+PerLevelStatsMultiplier_Player[11]=2
+
+; Tamed Dino Stats Multipliers
+PerLevelStatsMultiplier_DinoTamed[0]=2
+PerLevelStatsMultiplier_DinoTamed[1]=2
+PerLevelStatsMultiplier_DinoTamed[2]=1
+PerLevelStatsMultiplier_DinoTamed[3]=1
+PerLevelStatsMultiplier_DinoTamed[4]=1
+PerLevelStatsMultiplier_DinoTamed[5]=1
+PerLevelStatsMultiplier_DinoTamed[6]=2
+PerLevelStatsMultiplier_DinoTamed[7]=30
+PerLevelStatsMultiplier_DinoTamed[8]=2
+PerLevelStatsMultiplier_DinoTamed[9]=5
+PerLevelStatsMultiplier_DinoTamed[10]=5
+PerLevelStatsMultiplier_DinoTamed[11]=2
+
+; Wild Dino Status Multiplier
+PerLevelStatsMultiplier_DinoWild[0]=2
+PerLevelStatsMultiplier_DinoWild[1]=2
+PerLevelStatsMultiplier_DinoWild[2]=1
+PerLevelStatsMultiplier_DinoWild[3]=1
+PerLevelStatsMultiplier_DinoWild[4]=1
+PerLevelStatsMultiplier_DinoWild[5]=1
+PerLevelStatsMultiplier_DinoWild[6]=2
+PerLevelStatsMultiplier_DinoWild[7]=30
+PerLevelStatsMultiplier_DinoWild[8]=2
+PerLevelStatsMultiplier_DinoWild[9]=5
+PerLevelStatsMultiplier_DinoWild[10]=5
+PerLevelStatsMultiplier_DinoWild[11]=2
+
+; ---------------------------------------------------------------------------------------------------------------------
+; Override Max Quantities
+; ---------------------------------------------------------------------------------------------------------------------
+ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_RawPrimeMeat_C",Quantity=(MaxItemQuantity=500,bIgnoreMultiplier=True))
+ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_WyvernMilk_C",Quantity=(MaxItemQuantity=10, bIgnoreMultiplier=true))
+
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_RawMeat_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_SpoiledMeat_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_CookedMeat_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_CookedMeat_Jerky_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_CookedPrimeMeat_Jerky_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_RawMeat_Fish_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_CookedMeat_Fish_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_RawPrimeMeat_Fish_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_CookedPrimeMeat_Fish_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_RawMutton_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_CookedLambChop_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_WyvernMilk_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_Berry_Amarberry_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_Berry_Azulberry_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_Berry_Mejoberry_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_Berry_Narcoberry_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_Berry_Stimberry_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_Berry_Tintoberry_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_CactusSap_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_Veggie_Citronal_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_Veggie_Longrass_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_Veggie_Rockarrot_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_Veggie_Savoroot_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_CommonMushroom_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_Mushroom_Aquatic_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_Mushroom_Ascerbic_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_Mushroom_Auric_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemResource_Beer_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_BeerJar_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_JellyVenom_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_HealSoup_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_StaminaSoup_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_BugRepellant_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_SweetVeggieCake_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_Honey_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_Seed_Amarberry_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_Seed_Azulberry_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_Seed_Citronal_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_Seed_Longrass_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_Seed_Mejoberry_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_Seed_Narcoberry_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_Seed_DefensePlant_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_Seed_PlantSpeciesY_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_Seed_PlantSpeciesZ_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_Seed_Rockarrot_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_Seed_Savoroot_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_Seed_Stimberry_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemConsumable_Seed_Tintoberry_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItem_WeaponBoomerang_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemAmmo_ChainBola_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItem_WeaponClusterGrenade_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItem_Glowstick_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItem_WeaponGrenade_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemStructure_PlantSpeciesYTrap_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItem_PlantSpeciesZ_Grenade_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItem_PoisonGrenade_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItem_GasGrenade_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItem_WeaponSpear_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemAmmo_AdvancedBullet_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemAmmo_AdvancedRifleBullet_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemAmmo_AdvancedSniperBullet_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemAmmo_Boulder_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemC4Ammo_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemAmmo_ArrowFlame_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemAmmo_Flamethrower_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemAmmo_GrapplingHook_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemAmmo_CompoundBowArrow_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemAmmo_AggroTranqDart_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemAmmo_RocketHomingMissile_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemAmmo_Rocket_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemAmmo_RefinedTranqDart_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemAmmo_SimpleBullet_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemAmmo_SimpleRifleBullet_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemAmmo_SimpleShotgunBullet_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemAmmo_BallistaArrow_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemAmmo_ArrowStone_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemAmmo_ArrowTranq_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemAmmo_TranqDart_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemAmmo_TranqSpearBolt_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemTransGPSAmmo_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))
+; ConfigOverrideItemMaxQuantity=(ItemClassString="PrimalItemAmmo_Zipline_C",Quantity=(MaxItemQuantity=1000, bIgnoreMultiplier=true))

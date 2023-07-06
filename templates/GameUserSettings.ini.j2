@@ -148,14 +148,14 @@ HideAllTamed=true
 ; Supports coloring as well as a duration.
 ; ---------------------------------------------------------------------------------------------------------------------
 [MessageOfTheDay]
-Message=<RichColor Color="0.85, 0.55, 1, 1">Welcome to the Old Blood Eyes server.</>\n<RichColor Color="1, 0, 0, 1">Authorized Users Only!</>\nManaged lovingly by Sir Coffinator.
+Message={{ ENV['MOTD'] }}
 Duration=15
 
 ; ---------------------------------------------------------------------------------------------------------------------
 ; Session Settings - The name of your Server
 ; ---------------------------------------------------------------------------------------------------------------------
 [SessionSettings]
-SessionName=[US] Old Blood Eyes (OBE)
+SessionName={{ ENV['SERVER_NAME'] }}
 
 ; ---------------------------------------------------------------------------------------------------------------------
 ; This determines the amount of slots your server will have.
